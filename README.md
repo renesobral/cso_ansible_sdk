@@ -1,6 +1,6 @@
 # Ansible SDK for Juniper's CSO
 
-[![N|Solid](https://contrail-juniper.net/assets/images/background/icon_juniper_logo_white.svg)](https://www.juniper.net/us/en/products-services/sdn/contrail/contrail-service-orchestration/)
+[![N|Solid](https://upload.wikimedia.org/wikipedia/commons/3/31/Juniper_Networks_logo.svg)](https://www.juniper.net/us/en/products-services/sdn/contrail/contrail-service-orchestration/)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
