@@ -48,35 +48,35 @@ class CSO(object):
             self.api_wrapper = ApiWrapper(self._CSO_API_URL,api_token)
 
     def get_site_list(self):
-        endpoint = cso.constants.GET_SITE_LIST
+        endpoint = cso_ansible_sdk.constants.GET_SITE_LIST
         response = self.api_wrapper.get(endpoint)
         response = response.json()
 
         return response
 
     def get_sites_by_name(self):
-        endpoint = cso.constants.GET_SITE_LIST
+        endpoint = cso_ansible_sdk.constants.GET_SITE_LIST
         response = self.api_wrapper.get(endpoint)
         response = response.json()
 
         return response
 
     def create_site(self, payload):
-        endpoint = cso.constants.CREATE_SITE
+        endpoint = cso_ansible_sdk.constants.CREATE_SITE
         response = self.api_wrapper.post(endpoint=endpoint, payload=payload)
         response = response.json()
 
         return response
 
     def delete_site(self, payload):
-        endpoint = cso.constants.DELETE_SITE
+        endpoint = cso_ansible_sdk.constants.DELETE_SITE
         response = self.api_wrapper.post(endpoint=endpoint, payload=payload)
         response = response.json()
 
         return response
 
     def get_auth_token(self, payload):
-        endpoint = cso.constants.GET_AUTH_TOKEN
+        endpoint = cso_ansible_sdk.constants.GET_AUTH_TOKEN
         response = self.api_wrapper.post(endpoint=endpoint, payload=payload)
         response = response.json()
 

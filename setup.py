@@ -17,14 +17,14 @@ from setuptools import setup
 
 setup(
     name='cso_ansible_sdk',
-    version='0.0.1',
+    version='0.0.2',
     description='CSO SDK for Ansible',
     long_description='CSO SDK for Ansible',
     author='Calvin Remsburg',
     author_email='packetferret@gmail.com',
     packages=['cso_ansible_sdk'],
     url='https://github.com/packetferret/cso_ansible_sdk/',
-    download_url = 'https://github.com/packetferret/cso_ansible_sdk/archive/v0.0.1.tar.gz',
+    download_url = 'https://github.com/packetferret/cso_ansible_sdk/archive/v0.0.2.tar.gz',
     license='Apache Software License',
     install_requires=[
         "requests >= 2.23.0",
