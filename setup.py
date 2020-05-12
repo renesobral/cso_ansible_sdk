@@ -15,16 +15,21 @@
 
 from setuptools import setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+
 setup(
     name='cso_ansible_sdk',
-    version='0.0.2',
+    version='0.0.3',
     description='CSO SDK for Ansible',
-    long_description='CSO SDK for Ansible',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author='Calvin Remsburg',
     author_email='packetferret@gmail.com',
     packages=['cso_ansible_sdk'],
     url='https://github.com/packetferret/cso_ansible_sdk/',
-    download_url = 'https://github.com/packetferret/cso_ansible_sdk/archive/v0.0.2.tar.gz',
+    download_url = 'https://github.com/packetferret/cso_ansible_sdk/archive/v0.0.3.tar.gz',
     license='Apache Software License',
     install_requires=[
         "requests >= 2.23.0",
